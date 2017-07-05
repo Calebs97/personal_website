@@ -1,0 +1,58 @@
+// bower:scss
+// endbower
+
+@import 'bower_components/materialize/sass/materialize';
+@import 'intro';
+@import 'about';
+@import 'card';
+@import 'project';
+
+body {
+  background: #fafafa;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+nav {
+  padding-left: 4em;
+  padding-right: 4em;
+
+  .brand-logo {
+    font-weight: 700;
+  }
+
+  ul li a {
+    font-weight: 400;
+  }
+}
+
+.parallax-container {
+  height: 240px;
+
+  img {
+    width: 100%;
+  }
+
+  div.valign {
+    margin: 0 auto;
+    z-index: 1;
+
+    h3 {
+      color: white;
+      font-weight: 700;
+    }
+
+    @media #{$small-and-down} {
+      h3 {
+        text-align: center;
+        font-size: 2.6rem;
+      }
+    }
+  }
+}
+
+#showcase {
+  .col {
+    opacity: 0;
+  }
+}
